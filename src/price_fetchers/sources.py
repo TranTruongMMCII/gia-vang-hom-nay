@@ -19,7 +19,7 @@ NGOC_THAM_URL = "https://ngoctham.com/bang-gia-vang/"
 PNJ_URL = "https://edge-api.pnj.io/ecom-frontend/v1/get-gold-price?zone=00"
 
 
-VNĐ_PER_CHI = "VNĐ/chỉ"
+VNĐ_PER_CHI = "VND/chi"
 
 
 REQUEST_HEADERS = {
@@ -349,7 +349,7 @@ def fetch_pnj_prices() -> List[Dict[str, object]]:
 
 
 
-def fetch_gold_prices() -> List[str]:
+def fetch_gold_price_entries() -> List[Dict[str, object]]:
    entries: List[Dict[str, object]] = []
    for fetcher in (
        fetch_sjc_prices,
@@ -366,6 +366,17 @@ def fetch_gold_prices() -> List[str]:
 
 
    entries.sort(key=lambda item: (SOURCE_PRIORITY.get(item["source"], 99), item["product"]))
+
+
+   return entries
+
+
+
+
+def fetch_gold_prices() -> List[str]:
+   entries = fetch_gold_price_entries()
+   if not entries:
+       return []
 
 
    lines: List[str] = []
