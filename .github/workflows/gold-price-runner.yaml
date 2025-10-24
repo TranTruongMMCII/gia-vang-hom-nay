@@ -1,0 +1,36 @@
+name: Telegram Gold Notifier
+
+
+on:
+ workflow_dispatch:
+ schedule:
+   - cron: '0 2,5,8 * * *'
+
+
+jobs:
+ notify:
+   runs-on: self-hosted
+   steps:
+     - name: Checkout repository
+       uses: actions/checkout@v2
+
+
+     - name: Set up Python
+       uses: actions/setup-python@v2
+       with:
+         python-version: '3.8'
+
+
+     - name: Install dependencies
+       run: |
+         python -m pip install --upgrade pip
+         pip install -r requirements.txt
+
+
+     - name: Run the notifier once
+       env:
+         TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+         CHAT_ID: ${{ secrets.CHAT_ID }}
+       run: |
+         python src/main.py --once
+
