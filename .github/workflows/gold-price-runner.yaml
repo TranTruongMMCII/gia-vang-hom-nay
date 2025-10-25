@@ -43,9 +43,8 @@ jobs:
          REDIS_URL: ${{ secrets.REDIS_URL }}
          REDIS_HOST: ${{ secrets.REDIS_HOST }}
          REDIS_PORT: ${{ secrets.REDIS_PORT }}
+         REDIS_USERNAME: ${{ secrets.REDIS_USERNAME }}
          REDIS_PASSWORD: ${{ secrets.REDIS_PASSWORD }}
        run: |
          python src/main.py --once
-
-
 

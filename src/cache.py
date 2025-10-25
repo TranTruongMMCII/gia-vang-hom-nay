@@ -78,6 +78,7 @@ def _get_redis_client() -> Optional[Any]:
            client = redis.Redis(
                host=host,
                port=port,
+               username=os.getenv("REDIS_USERNAME") or None,
                password=os.getenv("REDIS_PASSWORD") or None,
                decode_responses=True,
            )
