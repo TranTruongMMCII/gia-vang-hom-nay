@@ -30,7 +30,7 @@ def _format_difference(current: Optional[int], previous: Optional[int]) -> Optio
    diff = current - previous
    diff_thousands = int(round(diff / 1000))
    if diff_thousands == 0:
-       return "=0"
+       return "0"
    return f"{diff_thousands:+,}".replace(",", ".")
 
 
@@ -48,7 +48,7 @@ def _format_value(current: Optional[int], previous: Optional[int]) -> str:
    diff_text = _format_difference(current, previous)
    if diff_text is None:
        return current_text
-   return f"{current_text} ({diff_text} vs {previous_text})"
+   return f"{current_text} ({diff_text})"
 
 
 
@@ -141,6 +141,3 @@ def send_price_update(telegram_client) -> bool:
    except Exception as exc:  # pragma: no cover - defensive logging
        print(f"[Dispatcher] Failed to persist cache: {exc}")
    return True
-
-
-
