@@ -19,7 +19,7 @@ NGOC_THAM_URL = "https://ngoctham.com/bang-gia-vang/"
 PNJ_URL = "https://edge-api.pnj.io/ecom-frontend/v1/get-gold-price?zone=00"
 
 
-VNĐ_PER_CHI = "VND/chi"
+VNĐ_PER_CHI = "k VND/chi"
 
 
 REQUEST_HEADERS = {
@@ -91,7 +91,8 @@ def _clean_number(value: object, *, multiplier: float = 1.0, divisor: float = 1.
 def _format_currency(value: Optional[int]) -> str:
    if value is None:
        return "--"
-   return f"{value:,}".replace(",", ".")
+   thousands = int(round(value / 1000))
+   return f"{thousands:,}".replace(",", ".")
 
 
 

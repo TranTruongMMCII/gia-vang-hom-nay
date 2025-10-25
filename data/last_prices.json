@@ -1,0 +1,52 @@
+{
+    "SJC": {
+        "SJC miếng 0.5-2 chỉ": {
+            "buy": 14720000,
+            "sell": 14923000,
+            "unit": "k VND/chi"
+        },
+        "SJC nhẫn 9999 0.3-0.5 chỉ": {
+            "buy": 14610000,
+            "sell": 14870000,
+            "unit": "k VND/chi"
+        },
+        "SJC nhẫn 9999 1-5 chỉ": {
+            "buy": 14610000,
+            "sell": 14860000,
+            "unit": "k VND/chi"
+        }
+    },
+    "Doji": {
+        "Doji nhẫn tròn 9999": {
+            "buy": 14650000,
+            "sell": 14910000,
+            "unit": "k VND/chi"
+        }
+    },
+    "PNJ": {
+        "PNJ nhẫn trơn 999.9": {
+            "buy": 14620000,
+            "sell": 14920000,
+            "unit": "k VND/chi"
+        },
+        "PNJ phúc lộc tài 999.9": {
+            "buy": 14620000,
+            "sell": 14920000,
+            "unit": "k VND/chi"
+        }
+    },
+    "Phú Quý": {
+        "Phú Quý nhẫn tròn 999.9": {
+            "buy": 14620000,
+            "sell": 14920000,
+            "unit": "k VND/chi"
+        }
+    },
+    "Ngọc Thẩm": {
+        "Ngọc Thẩm nhẫn 999.9": {
+            "buy": 14750000,
+            "sell": 15100000,
+            "unit": "k VND/chi"
+        }
+    }
+}
