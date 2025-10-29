@@ -1,52 +1,52 @@
 {
-    "SJC": {
-        "SJC miếng 0.5-2 chỉ": {
-            "buy": 14720000,
-            "sell": 14923000,
-            "unit": "k VND/chi"
-        },
-        "SJC nhẫn 9999 0.3-0.5 chỉ": {
-            "buy": 14610000,
-            "sell": 14870000,
-            "unit": "k VND/chi"
-        },
-        "SJC nhẫn 9999 1-5 chỉ": {
-            "buy": 14610000,
-            "sell": 14860000,
-            "unit": "k VND/chi"
-        }
+  "SJC": {
+    "SJC miếng 0.5-2 chỉ": {
+      "buy": 14490000,
+      "sell": 14693000,
+      "unit": "k VND/chỉ"
     },
-    "Doji": {
-        "Doji nhẫn tròn 9999": {
-            "buy": 14650000,
-            "sell": 14910000,
-            "unit": "k VND/chi"
-        }
+    "SJC nhẫn 9999 0.3-0.5 chỉ": {
+      "buy": 14280000,
+      "sell": 14540000,
+      "unit": "k VND/chỉ"
     },
-    "PNJ": {
-        "PNJ nhẫn trơn 999.9": {
-            "buy": 14620000,
-            "sell": 14920000,
-            "unit": "k VND/chi"
-        },
-        "PNJ phúc lộc tài 999.9": {
-            "buy": 14620000,
-            "sell": 14920000,
-            "unit": "k VND/chi"
-        }
-    },
-    "Phú Quý": {
-        "Phú Quý nhẫn tròn 999.9": {
-            "buy": 14620000,
-            "sell": 14920000,
-            "unit": "k VND/chi"
-        }
-    },
-    "Ngọc Thẩm": {
-        "Ngọc Thẩm nhẫn 999.9": {
-            "buy": 14750000,
-            "sell": 15100000,
-            "unit": "k VND/chi"
-        }
+    "SJC nhẫn 9999 1-5 chỉ": {
+      "buy": 14280000,
+      "sell": 14530000,
+      "unit": "k VND/chỉ"
     }
+  },
+  "Doji": {
+    "Doji nhẫn tròn 9999": {
+      "buy": 14380000,
+      "sell": 14680000,
+      "unit": "k VND/chỉ"
+    }
+  },
+  "PNJ": {
+    "PNJ nhẫn trơn 999.9": {
+      "buy": 14380000,
+      "sell": 14680000,
+      "unit": "k VND/chỉ"
+    },
+    "PNJ phúc lộc tài 999.9": {
+      "buy": 14380000,
+      "sell": 14680000,
+      "unit": "k VND/chỉ"
+    }
+  },
+  "Phú Quý": {
+    "Phú Quý nhẫn tròn 999.9": {
+      "buy": 14390000,
+      "sell": 14690000,
+      "unit": "k VND/chỉ"
+    }
+  },
+  "Ngọc Thẩm": {
+    "Ngọc Thẩm nhẫn 999.9": {
+      "buy": 14000000,
+      "sell": 14350000,
+      "unit": "k VND/chỉ"
+    }
+  }
 }
