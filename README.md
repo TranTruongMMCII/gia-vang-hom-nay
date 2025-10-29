@@ -29,7 +29,6 @@ gia-vang-hom-nay/
     ├── cache.py                      # Redis/file-based cache for price snapshots
     ├── dispatcher.py                 # Message formatting and Telegram dispatch
     ├── main.py                       # CLI entrypoint (supports --once flag)
-    ├── scheduler.py                  # Scheduling logic (for continuous mode)
     ├── show_prices.py                # CLI tool to print prices without sending
     ├── telegram_client.py            # Telegram bot wrapper
     └── price_fetchers/
@@ -142,7 +141,7 @@ Or run directly:
 
 ```bash
 python src/main.py --once   # Single run
-python src/main.py          # Continuous mode with scheduler
+# python src/main.py          # Continuous mode with scheduler
 ```
 
 #### GitHub Actions

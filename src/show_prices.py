@@ -9,7 +9,7 @@ except ImportError:  # pragma: no cover
 def main() -> None:
    lines = fetch_gold_prices()
    if not lines:
-       print("Khong lay duoc du lieu gia vang.")
+       print("Không lấy được dữ liệu giá vàng.")
        return
 
 
